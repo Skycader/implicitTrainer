@@ -55,6 +55,7 @@ const mods = {
 }
 
 const take = (obj) => {
+	if (obj[1]=="-") if (Math.random()<0.5) return obj[0]
 	let ok = Object.keys(obj).length
 	let rk = Math.floor(Math.random()*ok)
 	return obj[rk]
