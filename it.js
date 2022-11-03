@@ -63,8 +63,12 @@ const take = (obj) => {
 const render = () => {
 	try {
 	task = `${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}`
+	if (Math.random()>0.7) task = `${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}`
+	if (Math.random()>0.9) task = `${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}` 
 	//task = `{}-!2`
+	//task = `[]||+[]`
 	sol = parse(task)
+	//console.log(sol)
 	console.log("Counter: " + counter + " Strike: ", strike)
 	console.log(task)
 	return task
