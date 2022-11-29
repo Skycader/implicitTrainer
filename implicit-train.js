@@ -79,7 +79,7 @@ const render = () => {
 	task = `${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}`
 	if (Math.random()>0.7) task = `${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}`
 	if (Math.random()>0.8) task = `${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}${take(oprs)}${take(mods)}${take(vars)}` 
-	if (Math.random()<0.2) task = `typeof ${take(vars)}`
+	if (Math.random()<0.1) task = `typeof ${take(vars)}`
 	if (Math.random()<0.5) task = `${take(func)}(${take(vars)})`
 
 		//task = `{}-!2`

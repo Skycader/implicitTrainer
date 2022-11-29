@@ -80,7 +80,7 @@ const generator = (str) => {
 	? generator( str.replacer() )
 	: str
 }
-let code = ""
+let code = "//OK; \n var p = new Promise.resolve({{random-num}})"
 console.log("GENERATOR: \n",
 	code = prettier.format(generator(line[0]))
 )
